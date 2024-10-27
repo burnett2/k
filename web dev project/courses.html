@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPro Academy - Courses</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Courses</h1>
+    </header>
+
+    <section class="course-filter">
+        <label for="category">Filter by Category:</label>
+        <select id="category" onchange="filterCourses()">
+            <option value="all">All</option>
+            <option value="programming">Programming</option>
+            <option value="networking">Networking</option>
+            <option value="data-science">Data Science</option>
+        </select>
+    </section>
+
+    <section class="courses-list" id="courses-list">
+        <div class="course" data-category="programming">
+            <img src="images/python.jpg" alt="Python Programming">
+            <h3>Python Programming</h3>
+            <p>Learn the fundamentals of Python programming.</p>
+        </div>
+        <div class="course" data-category="networking">
+            <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+            <h3>Cybersecurity</h3>
+            <p>Understand the principles of cybersecurity.</p>
+        </div>
+        <div class="course" data-category="data-science">
+            <img src="images/data_analysis.jpg" alt="Data Analysis">
+            <h3>Data Analysis</h3>
+            <p>Master data analysis techniques.</p>
+        </div>
+        <!-- Add more courses as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TechPro Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
